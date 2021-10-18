@@ -94,7 +94,7 @@
 </head>
 
 <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
       <td>
         <!-- Bio and Image -->
@@ -104,21 +104,18 @@
               <p align="center">
                 <name>Ankit Goyal</name>
               </p>
-              <p align="justify">I am a Ph.D. student in Computer Science at Princeton University. I am a member of <a href="http://pvl.cs.princeton.edu/">Princeton Vision and Learning Lab</a>, advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed my Masters from University of Michigan and Bachelors from IIT Kanpur. <p>
+              <p align="justify">I am a Ph.D. student in Computer Science at Princeton University. I am a member of <a href="http://pvl.cs.princeton.edu/">Princeton Vision and Learning Lab</a>, advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. <p>
 	      <p align="justify"> I am fortunate to have interned at some wonderful places and work with some amazing mentors.
 	      <ul>
-		      <li> <i>Summer 2021:</i> Nvidia Robotics Research Lab
+		      <li> <i>Summer 2021:</i> Nvidia with <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a>
 		      <li> <i>Winter 2021:</i> Intel with <a href="http://vladlen.info/"> Vladlen Koltun </a>
 		      <li> <i>Summer 2016:</i> Microsoft Research India with <a href="https://www.prateekjain.org/">Prateek Jain</a>
 		      <li> <i>Summer 2015:</i> USC with <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/Home.html">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a>
-		      <!-- <li> <strong>Summer 2021</strong>: Nvidia Robotics Research Lab -->
-		      <!-- <li> <strong>Winter 2021</strong>: Intel with <a href="http://vladlen.info/"> Vladlen Koltun </a> -->
-		      <!-- <li> <strong>Summer 2016</strong>: Microsoft Research India with <a href="https://www.prateekjain.org/">Prateek Jain</a> -->
-		      <!-- <li> <strong>Summer 2015</strong>: USC with <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/Home.html">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a> -->
 	      </ul>
               </p>
 	      <p align="justify"> <strong> Recent News </strong>
 	      <ul>
+		      <li> <i>October 2021:</i> Paper on Non-deep Networks is available on <a href="https://arxiv.org/abs/2110.07641"> arxiv </a>.
 		      <li> <i>August 2021:</i> Recognized as an Outstanding Reviewer at <a href="http://iccv2021.thecvf.com/outstanding-reviewers"> ICCV 2021 </a>.
 		      <li> <i>July 2021:</i> Selected for Qualcomm Innovation Fellowship with Zachary Teed.
 		      <li> <i>June 2021:</i> Started internship at Nvidia with Dieter Fox.
@@ -155,10 +152,29 @@
 
         <!-- Publications-->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+	  <!-- Non-deep Networks -->
+          <tr>
+            <td width="35%">
+              <img src='images/nondeep.png' width=100%>
+            </td>
+            <td valign="top" width="70%">
+              <p>
+                <a href="https://arxiv.org/abs/2110.07641">
+                  <papertitle>Non-deep Networks</papertitle>
+                </a>
+                <br>
+                <strong>Ankit Goyal</strong>, Alexey Bochkovskiy, Jia Deng, Vladlen Koltun
+                <br>
+                <em>arxiv:2110.07641</em> 2021                
+		<br>
+                <a href="https://github.com/imankgoyal/NonDeepNetworks">[code]</a> 
+                <p align="justify"> We show, for the first time, that a network with a depth of just 12 can achieve top-1 accuracy over 80% on ImageNet, 96% on CIFAR10, and 81% on CIFAR100. We also show that a network with a low-depth (12) backbone can achieve an AP of 48% on MS-COCO. </p>
+            </td>
+          </tr>
 	
 	  <!-- SimpleView -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/simpleview.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -169,18 +185,18 @@
                 <br>
                 <strong>Ankit Goyal</strong>, Hei Law, Bowei Liu, Alejnadro Newell, Jia Deng 
                 <br>
-                <em>ICML</em> 2021, <span style="color:brown;"> NEW </span>                
+                <em>ICML</em> 2021                
 		<br>
                 <a href="https://github.com/princeton-vl/SimpleView">[code]</a> 
-		<a href="">[slides]</a>
-		<a href="">[poster]</a>
+		<a href="https://docs.google.com/presentation/d/1iYC5vDQPsb9nG9QCLwpm5TPL8i1F3sxu/edit?usp=sharing&ouid=116890615761823045471&rtpof=true&sd=true">[slides]</a>
+		<a href="https://drive.google.com/file/d/1kn6qXDgLa48BcyzGr4-vheFP1CQtYXH6/view?usp=sharing">[poster]</a>
                 <p align="justify"> Many point-based approaches have been proposed reporting steady benchmark improvements over time. We study the key ingredients of this progress and uncover two critical results. First, auxiliary factors, independent of the model architecture, make a large difference in performance. Second, a very simple projection based method performs surprisingly well. </p>
             </td>
           </tr>
           
           <!-- Rel3D -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/rel3D.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -202,7 +218,7 @@
 
           <!-- PackIt -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/packit.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -224,7 +240,7 @@
 
           <!-- Think Visually -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/dsmn2.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -245,7 +261,7 @@
 
           <!-- ProtoNN -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/protonn.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -274,7 +290,7 @@
 
           <!-- Emotion Prediction -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/multimodal.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -293,7 +309,7 @@
 
           <!-- SURF -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/surf.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -311,7 +327,7 @@
 
           <!-- Template Matching -->
           <tr>
-            <td width="30%">
+            <td width="35%">
               <img src='images/template.png' width=100%>
             </td>
             <td valign="top" width="70%">
