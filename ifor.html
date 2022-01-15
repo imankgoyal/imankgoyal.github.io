@@ -1,0 +1,355 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+.paper-thumbnail {
+    margin: 0 auto;
+    width: 40%;
+    max-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2% 10% 4% 0;
+}
+
+.paper-info {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width: 999px) {
+    .paper-thumbnail {
+        width: 60%;
+    }
+
+    .paper-info {
+        width: 80%;
+    }
+}
+
+pre {
+    overflow-x: auto;
+    text-align: left;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background: #eeeeee;
+    padding: 5px 5px 5px 10px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+}
+
+pre code {
+    text-align: left;
+    word-wrap: normal;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./ifor_files/icon.png">
+  <title>IFOR</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:36px;font-weight:bold;">IFOR: Iterative Flow Minimization for Robotic Object Rearrangement</span></center><br>
+      <table align="center" width="700px">
+
+      <tbody>
+      <tr>
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://imankgoyal.github.io/" target="_blank">Ankit Goyal</a></span></center></td>
+        
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://cs.gmu.edu/~amousavi/" target="_blank">Arsalan Mousavian</a></span></center></td>
+          
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://cpaxton.github.io/about/" target="_blank">Chris Paxton</a></span></center></td>
+      </tr>
+
+      <tr>
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://research.nvidia.com/person/yuwei-chao" target="_blank">Yu-Wei Chao</a></span></center></td>
+        
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://www.cs.princeton.edu/~jiadeng/" target="_blank">Jia Deng</a></span></center></td>
+          
+        <td align="center" width="260px">
+        <center><span style="font-size:22px"><a href="https://homes.cs.washington.edu/~fox/" target="_blank">Dieter Fox</a></span></center></td>
+      </tr>
+
+      <tr>
+
+      <table align="center" width="700px">
+          <tbody><tr>
+		<td align="center" width="250px">
+		<center><span style="font-size:20px">NVIDIA</span></center></td>
+		<td align="center" width="250px">
+		<center><span style="font-size:20px">Princeton University</span></center></td>
+          </tr>
+      </tbody></table>
+      
+      <br>
+
+      <table align="center" width="700px">
+          <tbody>
+          <tr>
+            <td align="center" width="100px"><center><span style="font-size:28px"><a href="">[Paper]</a></span></center></td>
+      	  </tr>
+	  </tbody>
+      </table>
+      <br>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_1.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+
+      <br>
+      <hr>
+
+      <center><h1>Abstract</h1></center>
+
+      <div style="width:900px; margin:0 auto; text-align:justify">
+	Accurate object rearrangement from vision is a crucial problem for a wide variety of real-world robotics applications in unstructured environments. We propose IFOR, Iterative Flow Minimization for Robotic Object Rearrangement, an end-to-end method for the challenging problem of object rearrangement for unknown objects given an RGBD image of the original and final scenes. First, we learn an optical flow model based on RAFT to estimate the relative transformation of the objects purely from synthetic data. This flow is then used in an iterative minimization algorithm to achieve accurate positioning of previously unseen objects. Crucially, we show that our method applies to cluttered scenes, and in the real world, while training only on synthetic data.
+      </div>
+      <br>
+      <hr>
+      <center><h1>Method</h1></center>
+        <tbody><tr><td width="1200px">
+          <center><a href="./ifor_files/method.png"><img src="./ifor_files/method.png" width="900px"></a><br></center>
+        </td></tr>
+      </tbody></table>
+      <br>
+      <div style="width:900px; margin:0 auto; text-align:justify">
+      IFOR takes as input RGB+D images of a current and a goal scene, and uses these to make predicts as to which objects should move and by which transformations, using RAFT to estimate optical flow. This is then sent to a robot planning and execution pipeline which is capable of grasping of unknown objects and motion planning in scenes with unknown geometry.
+      </div>
+
+      <hr>
+
+      <center><h1>Real World Examples</h1></center>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_1.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_2.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_3.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_4.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_5.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/real_seq_6.gif" height="300px"><br></center>
+      </td></tr>
+      </tbody></table>
+
+      <br>
+      <hr>
+
+
+      <center><h1>Synthetic Examples</h1></center>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/syn_seq_1.gif" height="340px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/syn_seq_2.gif" height="340px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/syn_seq_3.gif" height="340px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/syn_seq_4.gif" height="340px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/syn_seq_5.gif" height="340px"><br></center>
+      </td></tr>
+      </tbody></table>
+      <br>
+      <hr>
+      <center>
+      <h1>Paper</h1>
+      <div class="paper-thumbnail">
+      <a href="">
+      <img class="layered-paper-big" width="100%" src="./ifor_files/paper_thumb.png" alt="Paper thumbnail.">
+      </a>
+      </div>
+      <div class="paper-info">
+      <h4><a href="">IFOR: Iterative Flow Minimization for Robotic Object Rearrangement</a></h4>
+      <h5>
+Ankit Goyal, Arsalan Mousavian, Chris Paxton, Yu-Wei Chao, Jia Deng and Dieter Fox
+      </h5>
+      <pre><code>@inproceedings{goyal2022ifor,
+  title={IFOR: Iterative Flow Minimization for Robotic Object Rearrangement},
+  author={Goyal, Ankit and  Mousavian, Arsalan and Paxton, Chris and Chao, Yu-Wei and Deng, Jia and Fox, Dieter},
+  booktitle={arXiv:},
+  year={2022}
+}</code></pre>
+      </div>
+      </center>
+      <hr>
+      <br>
+
+    <table align="center" width="800px">
+      <tbody><tr><td width="800px"><left>
+      <!-- <center><h1>Acknowledgements</h1></center> -->
+      Website template from <a href="https://devendrachaplot.github.io/projects/spatial-planning-transformers">here</a>. <br>
+      </left></td></tr>
+    </tbody></table>
+  <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body></html>
