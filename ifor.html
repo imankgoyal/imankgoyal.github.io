@@ -173,7 +173,9 @@ pre code {
 
 <body>
       <br>
+      <a href="">
       <center><span style="font-size:36px;font-weight:bold;">IFOR: Iterative Flow Minimization for Robotic Object Rearrangement</span></center><br>
+      </a>
       <table align="center" width="800px">
 
       <tbody>
@@ -212,30 +214,54 @@ pre code {
 		<center><span style="font-size:20px"><sup>2</sup>Princeton University</span></center></td>
           </tr>
       </tbody></table>
-      
-      <br>
 
       <table align="center" width="700px">
-          <tbody>
-          <tr>
-            <td align="center" width="100px"><center><span style="font-size:28px"><a href="">[Paper]</a></span></center></td>
-      	  </tr>
-	  </tbody>
-      </table>
-      <br>
+          <tbody><tr>
+		<td align="center" width="250px">
+                <img src = "/images/nvidia.png" width="25%">
+		</td>
+		<td align="center" width="250px">
+                <img src = "/images/princeton.png" width="15%">
+		</td>
+          </tr>
+      </tbody></table>
+      
 
       <table align="center" width="300px">
       <tbody><tr><td align="center" width="300px">
           <center><img src="./ifor_files/real_seq_1.gif" height="300px"><br></center>
       </td></tr>
       </tbody></table>
-
-      <center><h1>Key Features</h1></center>
+	
+      <hr>
+      <center><h1>Tl;dr</h1></center>
       <div style="width:900px; margin:0 auto; text-align:center; font-size: 20px">
+	      &#9679; Robotic system for vision based object rearragement system; Iteratively minimizes flow. <br> <br>
 	      &#9679; Input is RGBD images of the current and target scene; No privilaged information used. <br> <br>
 	      &#9679; Trained entirely in simulation; Zero-shot transfer to real world. <br> <br>
 	      &#9679; Tested on objects not seen during training. <br> <br>
       </div>
+      <hr>
+      <center>
+      <h1>Paper</h1>
+      <div class="paper-thumbnail">
+      <a href="">
+      <img class="layered-paper-big" width="100%" src="./ifor_files/paper_thumb.png" alt="Paper thumbnail.">
+      </a>
+      </div>
+      <div class="paper-info">
+      <h4><a href="">IFOR: Iterative Flow Minimization for Robotic Object Rearrangement</a></h4>
+      <h5>
+Ankit Goyal, Arsalan Mousavian, Chris Paxton, Yu-Wei Chao, Jia Deng and Dieter Fox
+      </h5>
+      <pre><code>@inproceedings{goyal2022ifor,
+  title={IFOR: Iterative Flow Minimization for Robotic Object Rearrangement},
+  author={Goyal, Ankit and  Mousavian, Arsalan and Paxton, Chris and Chao, Yu-Wei and Deng, Jia and Fox, Dieter},
+  booktitle={arXiv:},
+  year={2022}
+}</code></pre>
+      </div>
+      </center>
       <hr>
       <center><h1>Abstract</h1></center>
 
@@ -335,28 +361,17 @@ pre code {
       </tbody></table>
       <br>
       <hr>
-      <center>
-      <h1>Paper</h1>
-      <div class="paper-thumbnail">
-      <a href="">
-      <img class="layered-paper-big" width="100%" src="./ifor_files/paper_thumb.png" alt="Paper thumbnail.">
-      </a>
-      </div>
-      <div class="paper-info">
-      <h4><a href="">IFOR: Iterative Flow Minimization for Robotic Object Rearrangement</a></h4>
-      <h5>
-Ankit Goyal, Arsalan Mousavian, Chris Paxton, Yu-Wei Chao, Jia Deng and Dieter Fox
-      </h5>
-      <pre><code>@inproceedings{goyal2022ifor,
-  title={IFOR: Iterative Flow Minimization for Robotic Object Rearrangement},
-  author={Goyal, Ankit and  Mousavian, Arsalan and Paxton, Chris and Chao, Yu-Wei and Deng, Jia and Fox, Dieter},
-  booktitle={arXiv:},
-  year={2022}
-}</code></pre>
-      </div>
-      </center>
-      <hr>
+
+      <center><h1>Comparison with Prior Work</h1></center>
+
+      <table align="center" width="300px">
+      <tbody><tr><td align="center" width="300px">
+          <center><img src="./ifor_files/ifor_vs_nerp.gif" height="550px"><br></center>
+      </td></tr>
+      </tbody></table>
+
       <br>
+      <hr>
 
     <table align="center" width="800px">
       <tbody><tr><td width="800px"><left>
