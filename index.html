@@ -86,6 +86,19 @@
     span.highlight {
       background-color: #ffffd0;
     }
+    
+    /* Publication row hover effect */
+    .publication-row {
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    
+    .publication-row:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: rgba(23, 114, 208, 0.02);
+    }
   </style>
   <link rel="icon" type="image/png" href="images/icon.png">
   <title>Ankit Goyal</title>
@@ -239,8 +252,34 @@
         <!-- Selected Publications-->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     
+    <!-- VLA-0 -->
+          <tr class="publication-row">
+              <td width="35%">
+                  <video width="100%" autoplay loop muted>
+                      <source src="https://vla0.github.io/Videos/teaser.mp4" type="video/mp4">
+                  </video>
+              </td>
+              <td valign="top" width="70%">
+                  <p>
+                      <a href="https://vla0.github.io/">
+                          <papertitle>VLA-0: Building State-of-the-Art VLAs with Zero Modification</papertitle>
+                      </a>
+                      <br>
+                      <strong>Ankit Goyal</strong>, Hugo Hadfield, Xuning Yang, Valts Blukis, Fabio Ramos
+                      <br>
+                      <em>arXiv 2025</em> 
+                      <br>
+                      <a href="https://vla0.github.io/">[project page]</a> 
+                      <a href="https://arxiv.org/abs/2510.13054">[paper]</a>
+                      <p align="justify">
+                        We introduce VLA-0, a surprisingly simple approach to building Vision-Language-Action models that achieves state-of-the-art results by representing actions directly as text, without any architectural changes to the base VLM. VLA-0 outperforms all methods trained on the same robotic data on LIBERO benchmark and even surpasses models with large-scale pretraining.
+                      </p>
+                  </p>
+              </td>
+          </tr>
+
     <!-- HAMSTER -->
-          <tr>
+          <tr class="publication-row">
               <td width="35%">
                   <video width="100%" autoplay loop muted>
                       <source src="https://hamster-robot.github.io/figs/hamster_teaser_v2.mp4" type="video/mp4">
@@ -295,7 +334,7 @@
           </tr>
 
 	  <!-- RVT-2 -->
-          <tr>
+          <tr class="publication-row">
               <td width="35%">
                   <img src='https://robotic-view-transformer-2.github.io/figs/teaser.gif' width=100%>
               </td>
@@ -330,8 +369,8 @@
           </tr>
 
 	  <!-- RVT -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='https://robotic-view-transformer.github.io/real_world/real_world_small.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -359,8 +398,8 @@
           </tr>
 
 	  <!-- RPDiff -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
 		    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
                     <source src="https://anthonysimeonov.github.io/rpdiff-multi-modal/img/book_bookshelf_seq1_8x_rdc_lout.mp4" type="video/mp4">
                 </video>
@@ -386,8 +425,8 @@
           </tr>
 
 	  <!-- Infinigen -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='https://infinigen.org/img/random_sample.jpeg' width=100%>
               <!-- <iframe src="https://www.youtube.com/embed/6tgspeI-GHY?rel=0&amp;autoplay=1&mute=1&vq=small"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe> -->
@@ -411,8 +450,8 @@
           </tr>
 
 	  <!-- ProgPrompt -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/progprompt.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -433,7 +472,7 @@
           </tr>
 	  <!-- IFOR -->
 
-          <tr>
+          <tr class="publication-row">
             <td width="35%">
               <img src='images/ifor.gif' width=100%>
             </td>
@@ -457,7 +496,7 @@
           </tr>
 
 	  <!-- 6DOF -->
-          <tr>
+          <tr class="publication-row">
             <td width="35%">
               <img src='images/6dof.png' width=100%>
             </td>
@@ -477,8 +516,8 @@
           </tr>
 
 	  <!-- Non-deep Networks -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/nondeep.jpg' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -503,8 +542,8 @@
           </tr>
 	
 	  <!-- SimpleView -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/simpleview.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -526,8 +565,8 @@
           </tr>
           
           <!-- Rel3D -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/rel3D.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -549,8 +588,8 @@
           </tr>
 
           <!-- PackIt -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/packit.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -571,8 +610,8 @@
           </tr>
 
           <!-- Think Visually -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/dsmn2.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -592,8 +631,8 @@
           </tr>
 
           <!-- ProtoNN -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/protonn.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -621,8 +660,8 @@
           </tr>
 
           <!-- Emotion Prediction -->
-          <tr>
-            <td width="35%">
+          <tr class="publication-row">
+              <td width="35%">
               <img src='images/multimodal.png' width=100%>
             </td>
             <td valign="top" width="70%">
