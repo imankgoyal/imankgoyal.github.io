@@ -23,6 +23,8 @@
     a {
       color: #1772d0;
       text-decoration: none;
+      transition: all 0.2s ease;
+      position: relative;
     }
     
     a:focus,
@@ -31,7 +33,21 @@
       text-decoration: none;
     }
     
-    body,
+    /* Subtle underline effect for links in paragraphs */
+    p a:not([href*="mailto"]):not([href*="twitter"]):hover {
+      text-decoration: underline;
+      text-decoration-color: rgba(240, 146, 40, 0.3);
+      text-underline-offset: 2px;
+    }
+    
+    body {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, #ffffff 0%, #f8fafb 50%, #ffffff 100%);
+      background-attachment: fixed;
+    }
+    
     td,
     th,
     tr,
@@ -58,8 +74,17 @@
     
     papertitle {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: 700
+      font-size: 15px;
+      font-weight: 700;
+    }
+    
+    /* Enhanced paper title link styling */
+    a papertitle {
+      transition: all 0.2s ease;
+    }
+    
+    a:hover papertitle {
+      letter-spacing: 0.3px;
     }
     
     name {
@@ -126,6 +151,129 @@
     li {
       margin-bottom: 8px;
     }
+    
+    /* News section styling */
+    .news-section {
+      background-color: rgba(247, 250, 252, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    
+    .news-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .news-section li {
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-left: 3px solid #1772d0;
+      background-color: white;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    
+    .news-section li:hover {
+      transform: translateX(5px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border-left-color: #f09228;
+    }
+    
+    /* Details/Summary styling for older news */
+    details.details-example {
+      margin-top: 15px;
+    }
+    
+    details.details-example summary {
+      cursor: pointer;
+      padding: 10px 15px;
+      background-color: rgba(23, 114, 208, 0.05);
+      border-radius: 4px;
+      font-weight: 600;
+      color: #1772d0;
+      transition: all 0.2s ease;
+    }
+    
+    details.details-example summary:hover {
+      background-color: rgba(23, 114, 208, 0.1);
+    }
+    
+    details.details-example[open] summary {
+      margin-bottom: 10px;
+    }
+    
+    /* Institution timeline styling */
+    .institution-timeline td:hover {
+      background-color: rgba(23, 114, 208, 0.05) !important;
+    }
+    
+    .institution-timeline img {
+      transition: all 0.3s ease;
+      filter: grayscale(0%);
+      opacity: 0.9;
+    }
+    
+    .institution-timeline img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    
+    /* Publication media styling */
+    .publication-row img,
+    .publication-row video {
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .publication-row:hover img,
+    .publication-row:hover video {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transform: scale(1.02);
+    }
+    
+    /* Smooth appearance for all images */
+    img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+    
+    /* Contact links bar styling */
+    .contact-links {
+      background: linear-gradient(to bottom, rgba(247, 250, 252, 0.5), rgba(255, 255, 255, 0.3));
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    
+    .contact-links a {
+      padding: 8px 12px;
+      margin: 0 5px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      display: inline-block;
+    }
+    
+    .contact-links a:hover {
+      background-color: rgba(23, 114, 208, 0.08);
+      transform: translateY(-1px);
+    }
+    
+    /* Main content container */
+    body > table {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    
+    /* Section spacing improvements */
+    heading {
+      margin-top: 10px;
+    }
   </style>
   <link rel="icon" type="image/png" href="images/icon.png">
   <title>Ankit Goyal</title>
@@ -169,7 +317,7 @@
           </tr>
 	  <tr>
             <td colspan="2">
-              <p align=center margin=0px>
+              <p align=center margin=0px class="contact-links">
                 <a href="mailto:ankgoyal@umich.edu">Email</a> &nbsp/&nbsp
                 <a href="data/AnkitGoyal_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=RhN6jKIAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp/&nbsp
@@ -182,7 +330,7 @@
 	  </tr>
         </table>
 	<div class = "row">
-        <table width="100%" align="center" margin-top=100px>
+        <table width="100%" align="center" margin-top=100px class="institution-timeline">
             <tr>
               <td align="center" width="14%" style = "vertical-align: middle; background-color: rgba(255, 255, 255, 1)">
                 <img src = "/images/nvidia.png" width="50%">
@@ -243,25 +391,25 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
-            <td width="100%" valign="top">
+            <td width="100%" valign="top" class="news-section">
               <ul>
                 <li><i>Sep 2025:</i> <a href="https://maniflow-policy.github.io/">ManiFlow</a> was accepted to CoRL 2025.</li>
                 <li><i>Jun 2025:</i> <a href="https://cutamp.github.io/">cuTAMP</a> was accepted to RSS 2025 and covered by <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">MIT News</a>.</li>
                 <li><i>Feb 2025:</i> <a href="https://jasonqsy.github.io/3DMVP/">3D-MVP</a>, 3D pretraining for manipulation was accepted to CVPR 2025.</li>
                 <li><i>Jan 2025:</i> <a href="https://hamster-robot.github.io/">HAMSTER</a>, a hierarchical VLA for open-world manipulation was accepted to ICLR 2025.</li>
-                <li><i>Sep 2024:</i> Gave a talk at <a href='https://www.youtube.com/watch?v=E_vOQsXWA30/'>MILA Robot Learning Seminar</a></li>
-                <li><i>Aug 2024:</i> <a href="https://actaim2.github.io">ActAIM2</a>, which discovers self-supervised action modes accepted to CoRL 2024.</li>
-                <li><i>May 2024:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a> accepted to RSS 2024.</li>
-                <li><i>May 2024:</i> Gave a keynote talk at <a href="https://icra-manipulation-skill.github.io/"> Manipulation Skills Workshop in ICRA</a>.</li>
-                <li><i>Oct 2023:</i> Gave a talk at <a href="https://robotics.cs.washington.edu/colloquium/"> UW Robotics Colloquium </a> along with Caelan Garrett and Iretiayo Akinola.</li>
-                <li><i>Aug 2023:</i> Two papers (including one Oral) accepted to CoRL 2023. <a href="https://robotic-view-transformer.github.io/">RVT</a> and <a href="https://github.com/anthonysimeonov/rpdiff">"Shelving, Stacking and Hanging"</a>.</li>
-                <li><i>June 2023:</i> Released <a href="https://robotic-view-transformer.github.io/">Robotic View Transformer</a> for fast and performant 3D manipulation.</li>
-                <li><i>May 2023:</i> Selected to be a part of the <a href='https://sites.google.com/view/rsspioneers2023/participants?authuser=0'>RSS Pioneers Cohort, 2023</a>.</li>
-                <li><i>Apr 2023:</i> Gave a talk at <a href='https://mila-vision-rg.github.io/'>MILA Vision Reading Group</a>. Thanks for the invite!</li>
               </ul>
               <details class="details-example">
                 <summary>Older news</summary>
                 <ul>
+                  <li><i>Sep 2024:</i> Gave a talk at <a href='https://www.youtube.com/watch?v=E_vOQsXWA30/'>MILA Robot Learning Seminar</a></li>
+                  <li><i>Aug 2024:</i> <a href="https://actaim2.github.io">ActAIM2</a>, which discovers self-supervised action modes accepted to CoRL 2024.</li>
+                  <li><i>May 2024:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a> accepted to RSS 2024.</li>
+                  <li><i>May 2024:</i> Gave a keynote talk at <a href="https://icra-manipulation-skill.github.io/"> Manipulation Skills Workshop in ICRA</a>.</li>
+                  <li><i>Oct 2023:</i> Gave a talk at <a href="https://robotics.cs.washington.edu/colloquium/"> UW Robotics Colloquium </a> along with Caelan Garrett and Iretiayo Akinola.</li>
+                  <li><i>Aug 2023:</i> Two papers (including one Oral) accepted to CoRL 2023. <a href="https://robotic-view-transformer.github.io/">RVT</a> and <a href="https://github.com/anthonysimeonov/rpdiff">"Shelving, Stacking and Hanging"</a>.</li>
+                  <li><i>June 2023:</i> Released <a href="https://robotic-view-transformer.github.io/">Robotic View Transformer</a> for fast and performant 3D manipulation.</li>
+                  <li><i>May 2023:</i> Selected to be a part of the <a href='https://sites.google.com/view/rsspioneers2023/participants?authuser=0'>RSS Pioneers Cohort, 2023</a>.</li>
+                  <li><i>Apr 2023:</i> Gave a talk at <a href='https://mila-vision-rg.github.io/'>MILA Vision Reading Group</a>. Thanks for the invite!</li>
                   <li><i>Feb 2023:</i> <a href="https://arxiv.org/abs/2209.11302">ProgPrompt</a> accepted to <b>ICRA 2023</b> - LLM+Robotics led by <a href="https://ishikasingh.github.io/">Ishika</a> and <a href="https://www.cs.cornell.edu/~valts/">Valts</a>.</li>
                   <li><i>Oct 2022:</i> <a href='https://github.com/princeton-vl/Coupled-Iterative-Refinement'>6D pose estimation work</a> led by <a href='https://www.lahavlipson.com/'>Lahav Lipson</a> won an award in ECCV BOP challenge 2022.</li>
                   <li><i>Sep 2022:</i> Received the <a href='https://neurips.cc/Conferences/2022/FinancialAssistance'> NeurIPS Scholar Award</a>.</li>
@@ -346,7 +494,7 @@
           </tr>
 
     <!-- 3D-MVP -->
-          <tr>
+          <tr class="publication-row">
               <td width="35%">
                   <img src='https://jasonqsy.github.io/3DMVP/static/images/architecture.png' width=100%>
               </td>
