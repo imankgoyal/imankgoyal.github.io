@@ -241,22 +241,20 @@
     
     /* Contact links bar styling */
     .contact-links {
-      background: linear-gradient(to bottom, rgba(247, 250, 252, 0.5), rgba(255, 255, 255, 0.3));
-      padding: 20px;
-      border-radius: 8px;
+      padding: 15px;
       margin-top: 10px;
     }
     
-    .contact-links a {
-      padding: 8px 12px;
-      margin: 0 5px;
+    .contact-links a:not(.twitter-follow-button) {
+      padding: 6px 12px;
+      margin: 0 4px;
       border-radius: 4px;
       transition: all 0.2s ease;
       display: inline-block;
     }
     
-    .contact-links a:hover {
-      background-color: rgba(23, 114, 208, 0.08);
+    .contact-links a:not(.twitter-follow-button):hover {
+      background-color: rgba(23, 114, 208, 0.06);
       transform: translateY(-1px);
     }
     
@@ -294,7 +292,7 @@
               </p>
 	      <p>&nbsp;</p>
               <p align="justify">
-		I am a Research Scientist in Robotics at NVIDIA. I did my Ph.D. in Computer Science at Princeton University, where I was advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. 
+		I am a Senior Research Scientist in Robotics at NVIDIA. I did my Ph.D. in Computer Science at Princeton University, where I was advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. 
 	      <p>
 	      <!-- <p align="justify" style="color:red;"> -->
 	      <!--   <b><span color="red"> --> 
@@ -302,12 +300,13 @@
 		<!-- </span></b> -->
 	      <!-- </p> -->
 	      <p align="justify"> 
-	      	I have been fortunate to intern at some wonderful places and work with amazing mentors.
+	      	I have been fortunate to work with some amazing mentors and pioneers in the field of AI and Robotics.
 	        <ul>
-	          <li> <i>Summer 2021:</i> Nvidia with <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a>
-	          <li> <i>Winter 2021:</i> Intel with <a href="http://vladlen.info/"> Vladlen Koltun </a>
-	          <li> <i>Summer 2016:</i> Microsoft Research India with <a href="https://www.prateekjain.org/">Prateek Jain</a>
-	          <li> <i>Summer 2015:</i> USC with <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/Home.html">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a>
+	          <li> <i>2021-25:</i> <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a> at NVIDIA
+	          <li> <i>2018-22:</i> <a href="http://www.cs.princeton.edu/~jiadeng/"> Jia Deng </a> at Princeton University
+            <li> <i>2021:</i> <a href="http://vladlen.info/"> Vladlen Koltun </a> at Intel
+	          <li> <i>2016:</i> <a href="https://www.prateekjain.org/">Prateek Jain</a> at MSR India
+	          <li> <i>2015:</i> <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a> at USC
 	        </ul>
               </p>
 	    </td>
@@ -322,7 +321,7 @@
                 <a href="data/AnkitGoyal_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=RhN6jKIAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/imankgoyal">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/ankit-goyal-5baaa287/"> LinkedIn </a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/ankit-goyal-5baaa287/">LinkedIn</a> &nbsp/&nbsp
 	        <a href="https://twitter.com/imankitgoyal?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @imankitgoyal</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
              </p>
 	     <p>&nbsp;</p>
@@ -393,6 +392,9 @@
           <tr>
             <td width="100%" valign="top" class="news-section">
               <ul>
+                <li><i>Oct 2025:</i> Released <a href="https://vla0.github.io/">VLA-0</a>, a simple yet state-of-the-art approach to building Vision-Language-Action models.</li>
+                <li><i>Oct 2025:</i> Gave an invited talk at <a href="https://opendrivelab.com/iccv2025/workshop/">ICCV 2025 Workshop on Advancing Spatial Understanding for Embodied Intelligence</a>.</li>
+                <li><i>Oct 2025:</i> Gave a guest lecture at <a href="https://labs.utdallas.edu/irvl/courses/fall-2025-cs-6341-robotics/">UT Dallas CS 6341 Robotics</a> on "Perspectives on Designing Vision-Language-Action Models".</li>
                 <li><i>Sep 2025:</i> <a href="https://maniflow-policy.github.io/">ManiFlow</a> was accepted to CoRL 2025.</li>
                 <li><i>Jun 2025:</i> <a href="https://cutamp.github.io/">cuTAMP</a> was accepted to RSS 2025 and covered by <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">MIT News</a>.</li>
                 <li><i>Feb 2025:</i> <a href="https://jasonqsy.github.io/3DMVP/">3D-MVP</a>, 3D pretraining for manipulation was accepted to CVPR 2025.</li>
@@ -429,9 +431,6 @@
     <tr>
       <td width="100%" valign="middle">
         <heading>Selected Publications</heading>
-        <p align="justify">
-          I am interested in understanding various aspects of intelligence, especially reasoning and common sense. In particular, I want to develop computation models for various reasoning skills that humans possess.
-        </p>
       </td>
     </tr>
         </table>
@@ -484,8 +483,6 @@
                       <br>
                       <a href="https://github.com/liyi14/HAMSTER_beta">[code]</a> 
                       <a href="https://hamster-robot.github.io/">[project page]</a> 
-                      <br> <br>
-                      <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/"><img src='https://s3.amazonaws.com/cms.ipressroom.com/219/files/20237/64e3dc1a3d6332319b2dfd35_NVIDIA-logo-white-16x9/NVIDIA-logo-white-16x9_927581a6-fc31-4fa5-85c6-379680c6aa6c-prv.png' style="height:45px; object-fit:cover; width:45px;"></a>
                       <p align="justify">
                         We introduce HAMSTER, a Hierarchical Vision-Language-Action (VLA) architecture designed for robotic manipulation. This approach effectively combines the advantages of imitation learning models, which require little in-domain robot data, with those of large VLA models that can generalize well.
                       </p>
@@ -511,8 +508,6 @@
                       <!-- <a href="https://github.com/jasonqsy/3DMVP">[code]</a>  -->
                       <a href="https://jasonqsy.github.io/3DMVP/">[project page]</a> 
                       <a href="https://arxiv.org/abs/2406.18158">[paper]</a>
-                      <br> <br>
-                      <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics"><img src='https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/cvpr/_jcr_content/root/responsivegrid/nv_container_copy_co/nv_container/nv_image.coreimg.100.1290.png/1749620067706/cvpr-2025-logo.png' height=40px></a>
                       <p align="justify">
                         We propose 3D multi-view pretraining using MAEs for robot manipulation. 
                       </p>
@@ -537,17 +532,6 @@
                       <br>
                       <a href="https://github.com/nvlabs/rvt">[code]</a> 
                       <a href="https://robotic-view-transformer-2.github.io/">[project page]</a> 
-                      <br> <br>
-                      <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf">
-                          <img src='https://www.hackster.io/assets/hackster_logo_squared.png' height=45px>
-                      </a>&nbsp;&nbsp;
-                      <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b">
-                          <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png" style="width:60px; height:45px; object-fit:cover;">
-                      </a>&nbsp;&nbsp;
-                      <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1751133579898100">
-                        <img src='https://cdn.futustatic.com/moomoo_node/assets/images/moo.19ace43571.png' style="width:60px; height:45px; object-fit:cover;">
-                      </a>
-                      
                       <p align="justify">
                           We study how to build a robotic system that can solve high-precision manipulation tasks from a few demonstrations. Prior works, like PerAct and RVT, have studied few-shot manipulation; however, they often struggle with tasks requiring high precision. We study how to make them more effective, precise, and fast. Using a combination of architectural and system-level improvements, we propose RVT-2, a multitask 3D manipulation model that is 6X faster in training and 2X faster in inference than its predecessor RVT. RVT-2 achieves a new state-of-the-art on RLBench.
                       </p>
@@ -574,10 +558,6 @@
 		<a href="https://robotic-view-transformer.github.io/">[project page]</a> 
 		<a href="https://www.youtube.com/watch?v=mIQN4f3KSA8">[video]</a> 
 		<a href="data/rvt.key">[slides]</a> 
-		<br> <br>
-                <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73"><img src='https://www.hackster.io/assets/hackster_logo_squared.png' height=45px></a>
-                <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/"><img src='https://www.therobotreport.com/wp-content/uploads/2018/01/the-robot-report-business-of-robots-Lisa-Eitel-Dan-Kara-Steve-Crowe.jpg' height=45px></a> 
-                <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition"><img src='https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/f5e63dd4-5653-4f09-83e2-321a8b1ba526/thumb_AI_PAPERS_SUMMARIES.png' height=45px></a> 
 
 
 		<p align="justify"> RVT is a multi-view transformer for 3D manipulation that is both scalable and accurate.  In simulations, a single RVT model works well across 18 RLBench tasks with 249 task variations, achieving 26% higher relative success than existing  SOTA (PerAct). It also trains 36X faster than PerAct for achieving the same performance and achieves 2.3X the inference speed of PerAct. Further, RVT can perform a variety of manipulation tasks in the real world with just a few (~10) demonstrations per task.</p>
@@ -629,9 +609,6 @@
 		<em>CVPR 2023</em> 
 		<br>
 		<a href="https://infinigen.org/">[project page]</a> 
-    <br> <br>
-                <a href="https://news.ycombinator.com/item?id=36376071"><img src='https://news.ycombinator.com/y18.svg' height=45px></a>
-
 		<p align="justify">Infinigen is a generator of unlimited high-quality 3D data. Procedural and open-source.</p>
             </td>
           </tr>
@@ -721,9 +698,6 @@
 		<a href="data/non_deep_poster.pdf">[poster]</a> 
 		<a href="data/non_deep_conf.key">[slides]</a> 
 		<a href="https://neurips.cc/virtual/2022/poster/55098">[video]</a> 
-		<br> <br>
-                <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/"><img src='images/synced.png' height=25px></a> &nbsp; &nbsp;
-                <a href="https://papersread.ai/e/non-deep-networks/"><img src='images/podbean.png' height=25px></a>                 
 		<p align="justify"> Depth is the hallmark of DNNs. But more depth means more sequential computation and higher latency. This begs the question -- is it possible to build high-performing ``non-deep" neural networks? We show it is. </p>
             </td>
           </tr>
@@ -902,6 +876,289 @@
           <!--    </p> --> 
           <!--   </td> -->
           <!-- </tr> -->
+
+        </table>
+
+        <!-- Media Coverage -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td width="100%" valign="middle">
+        <heading>Media Coverage</heading>
+      </td>
+    </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <!-- Selected Coverage -->
+          <!-- CVPR News - 3D-MVP -->
+          <tr class="publication-row">
+            <td width="15%" align="center" valign="top">
+              <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics">
+                <img src='https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/cvpr/_jcr_content/root/responsivegrid/nv_container_copy_co/nv_container/nv_image.coreimg.100.1290.png/1749620067706/cvpr-2025-logo.png' style="width:100%; max-width:120px; object-fit:contain;">
+              </a>
+            </td>
+            <td width="85%" valign="top">
+              <p>
+                <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics">
+                  <strong>CVPR News</strong>
+                </a>
+                <br>
+                <i>Work covered:</i> <a href="https://jasonqsy.github.io/3DMVP/">3D-MVP</a>
+                <br>
+                Featured in CVPR 2025 AI-Enhanced Robotics highlights.
+              </p>
+            </td>
+          </tr>
+
+          <!-- NVIDIA Blog - HAMSTER -->
+          <tr class="publication-row">
+            <td width="15%" align="center" valign="top">
+              <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/">
+                <img src='https://s3.amazonaws.com/cms.ipressroom.com/219/files/20237/64e3dc1a3d6332319b2dfd35_NVIDIA-logo-white-16x9/NVIDIA-logo-white-16x9_927581a6-fc31-4fa5-85c6-379680c6aa6c-prv.png' style="width:100%; max-width:120px; object-fit:cover;">
+              </a>
+            </td>
+            <td width="85%" valign="top">
+              <p>
+                <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/">
+                  <strong>NVIDIA Blog</strong>
+                </a>
+                <br>
+                <i>Work covered:</i> <a href="https://hamster-robot.github.io/">HAMSTER</a>
+                <br>
+                NVIDIA highlights HAMSTER research at ICLR 2025.
+              </p>
+            </td>
+          </tr>
+
+          <!-- MIT News - cuTAMP -->
+          <tr class="publication-row">
+            <td width="15%" align="center" valign="top">
+              <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MIT_News_logo.png/500px-MIT_News_logo.png' style="width:100%; max-width:120px; object-fit:contain;">
+              </a>
+            </td>
+            <td width="85%" valign="top">
+              <p>
+                <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">
+                  <strong>MIT News</strong>
+                </a>
+                <br>
+                <i>Work covered:</i> <a href="https://cutamp.github.io/">cuTAMP</a>
+                <br>
+                New system enables robots to solve manipulation problems in seconds.
+              </p>
+            </td>
+          </tr>
+
+          <!-- The Robot Report - RVT -->
+          <tr class="publication-row">
+            <td width="15%" align="center" valign="top">
+              <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/">
+                <img src='https://www.therobotreport.com/wp-content/uploads/2018/01/the-robot-report-business-of-robots-Lisa-Eitel-Dan-Kara-Steve-Crowe.jpg' style="width:100%; max-width:120px; object-fit:cover;">
+              </a>
+            </td>
+            <td width="85%" valign="top">
+              <p>
+                <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/">
+                  <strong>The Robot Report</strong>
+                </a>
+                <br>
+                <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
+                <br>
+                NVIDIA's RVT Can Learn New Tasks After Just 10 Demos.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Hacker News - Infinigen -->
+          <tr class="publication-row">
+            <td width="15%" align="center" valign="top">
+              <a href="https://news.ycombinator.com/item?id=36376071">
+                <img src='https://news.ycombinator.com/y18.svg' style="width:100%; max-width:120px;">
+              </a>
+            </td>
+            <td width="85%" valign="top">
+              <p>
+                <a href="https://news.ycombinator.com/item?id=36376071">
+                  <strong>Hacker News</strong>
+                </a>
+                <br>
+                <i>Work covered:</i> <a href="https://infinigen.org/">Infinigen</a>
+                <br>
+                Featured on Hacker News front page.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Collapsible Other Coverage -->
+          <tr>
+            <td colspan="2">
+              <details class="details-example">
+                <summary>Other coverage</summary>
+                <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                  <!-- RVT-2 - Hackster.io -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf">
+                        <img src='https://www.hackster.io/assets/hackster_logo_squared.png' style="width:100%; max-width:120px;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf">
+                          <strong>Hackster.io</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
+                        <br>
+                        RVT-2 is a Fast Learner - Coverage of our robotic manipulation research.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- RVT-2 - Medium -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png" style="width:100%; max-width:120px; object-fit:cover;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b">
+                          <strong>Medium - AI Disruption</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
+                        <br>
+                        NVIDIA Releases General Robot Model RVT-2 with 6X Training Efficiency Boost.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- RVT-2 - Moomoo -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1751133579898100">
+                        <img src='https://cdn.futustatic.com/moomoo_node/assets/images/moo.19ace43571.png' style="width:100%; max-width:120px; object-fit:cover;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1751133579898100">
+                          <strong>Moomoo News</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
+                        <br>
+                        NVIDIA Releases the General Robot Model RVT-2, Accelerating the Robotics Revolution.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- RVT - Hackster.io -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73">
+                        <img src='https://www.hackster.io/assets/hackster_logo_squared.png' style="width:100%; max-width:120px;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73">
+                          <strong>Hackster.io</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
+                        <br>
+                        A New Perspective on 3D Object Manipulation.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- RVT - MarkTechPost -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition">
+                        <img src='https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/f5e63dd4-5653-4f09-83e2-321a8b1ba526/thumb_AI_PAPERS_SUMMARIES.png' style="width:100%; max-width:120px;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition">
+                          <strong>MarkTechPost Newsletter</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
+                        <br>
+                        AI News: Featured in weekly AI updates (June 28, 2023 Edition).
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- Non-Deep - TDS -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://towardsdatascience.com/non-deep-networks-b0b80c65c7c6/">
+                        <img src='https://miro.medium.com/v2/resize:fit:1200/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style="width:100%; max-width:120px; object-fit:contain;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://towardsdatascience.com/non-deep-networks-b0b80c65c7c6/">
+                          <strong>Towards Data Science</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
+                        <br>
+                        In-depth paper review: "Less is the new more?" - ParNet matching performance with just 12 layers.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- Non-Deep - Medium -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://sh-tsang.medium.com/brief-review-parnet-non-deep-networks-e2e1d0d243aa">
+                        <img src='https://miro.medium.com/v2/resize:fit:1200/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style="width:100%; max-width:120px; object-fit:contain;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://sh-tsang.medium.com/brief-review-parnet-non-deep-networks-e2e1d0d243aa">
+                          <strong>Medium - Sik-Ho Tsang</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
+                        <br>
+                        Brief Review: Parallel subnetworks instead of stacking one layer after another.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <!-- Non-Deep - Synced -->
+                  <tr class="publication-row">
+                    <td width="15%" align="center" valign="top">
+                      <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/">
+                        <img src='images/synced.png' style="width:100%; max-width:120px;">
+                      </a>
+                    </td>
+                    <td width="85%" valign="top">
+                      <p>
+                        <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/">
+                          <strong>Synced Review</strong>
+                        </a>
+                        <br>
+                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
+                        <br>
+                        Featured in article about high-performance ML frameworks and architectures.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </details>
+            </td>
+          </tr>
 
         </table>
 
