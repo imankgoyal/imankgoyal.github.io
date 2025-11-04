@@ -239,23 +239,41 @@
       image-rendering: crisp-edges;
     }
     
-    /* Contact links bar styling */
+    /* Contact links bar styling - Connected segments */
     .contact-links {
-      padding: 15px;
-      margin-top: 10px;
+      padding: 20px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
-    .contact-links a:not(.twitter-follow-button) {
-      padding: 6px 12px;
-      margin: 0 4px;
-      border-radius: 4px;
+    .contact-links a {
+      padding: 10px 20px;
+      margin: 0;
+      border: 1.5px solid rgba(23, 114, 208, 0.3);
+      border-right: none;
       transition: all 0.2s ease;
       display: inline-block;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      color: #1772d0;
     }
     
-    .contact-links a:not(.twitter-follow-button):hover {
-      background-color: rgba(23, 114, 208, 0.06);
-      transform: translateY(-1px);
+    .contact-links a:first-of-type {
+      border-radius: 8px 0 0 8px;
+    }
+    
+    .contact-links a:last-of-type {
+      border-radius: 0 8px 8px 0;
+      border-right: 1.5px solid rgba(23, 114, 208, 0.3);
+    }
+    
+    .contact-links a:hover {
+      background-color: rgba(23, 114, 208, 0.1);
+      color: #f09228 !important;
+      z-index: 1;
+      position: relative;
     }
     
     /* Profile image styling */
@@ -353,12 +371,12 @@
 	  <tr>
             <td colspan="2">
               <p align=center margin=0px class="contact-links">
-                <a href="mailto:ankgoyal@umich.edu">Email</a> &nbsp/&nbsp
-                <a href="data/AnkitGoyal_CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=RhN6jKIAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/imankgoyal">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/ankit-goyal-5baaa287/">LinkedIn</a> &nbsp/&nbsp
-	        <a href="https://twitter.com/imankitgoyal?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @imankitgoyal</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a href="mailto:ankgoyal@umich.edu">Email</a>
+                <a href="data/AnkitGoyal_CV.pdf">CV</a>
+                <a href="https://scholar.google.com/citations?user=RhN6jKIAAAAJ&hl=en&oi=sra">Scholar</a>
+                <a href="https://github.com/imankgoyal">Github</a>
+                <a href="https://www.linkedin.com/in/ankit-goyal-5baaa287/">LinkedIn</a>
+                <a href="https://x.com/imankitgoyal">Twitter</a>
              </p>
 	     <p>&nbsp;</p>
 	   </td>
