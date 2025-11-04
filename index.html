@@ -258,6 +258,37 @@
       transform: translateY(-1px);
     }
     
+    /* Profile image styling */
+    .profile-image {
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    /* Asymmetric intro layout */
+    .asymmetric-intro .name-header {
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .asymmetric-intro .content-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    
+    .asymmetric-intro .bio-content {
+      flex: 2;
+    }
+    
+    .asymmetric-intro .image-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
     /* Main content container */
     body > table {
       background-color: rgba(255, 255, 255, 0.9);
@@ -284,35 +315,40 @@
     <tr>
       <td>
         <!-- Bio and Image -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" class="asymmetric-intro">
           <tr>
-            <td width="80%" valign="middle">
-              <p align="center">
-                <name>Ankit Goyal</name>
-              </p>
-	      <p>&nbsp;</p>
-              <p align="justify">
-		I am a Senior Research Scientist in Robotics at NVIDIA. I did my Ph.D. in Computer Science at Princeton University, where I was advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. 
-	      <p>
-	      <!-- <p align="justify" style="color:red;"> -->
-	      <!--   <b><span color="red"> --> 
-		<!-- I am looking for full-time research positions starting from Summer/Fall 2022. -->
-		<!-- </span></b> -->
-	      <!-- </p> -->
-	      <p align="justify"> 
-	      	I have been fortunate to work with some amazing mentors and pioneers in the field of AI and Robotics.
-	        <ul>
-	          <li> <i>2021-25:</i> <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a> at NVIDIA
-	          <li> <i>2018-22:</i> <a href="http://www.cs.princeton.edu/~jiadeng/"> Jia Deng </a> at Princeton University
-            <li> <i>2021:</i> <a href="http://vladlen.info/"> Vladlen Koltun </a> at Intel
-	          <li> <i>2016:</i> <a href="https://www.prateekjain.org/">Prateek Jain</a> at MSR India
-	          <li> <i>2015:</i> <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a> at USC
-	        </ul>
-              </p>
-	    </td>
-            <td width="20%">
-              <img src="images/self.png">
+            <td width="100%" class="name-header">
+              <name>Ankit Goyal</name>
             </td>
+          </tr>
+          <tr>
+            <td width="100%">
+              <div class="content-row">
+                <div class="bio-content">
+                  <p align="justify">
+		    I am a Senior Research Scientist in Robotics at NVIDIA. I did my Ph.D. in Computer Science at Princeton University, where I was advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. 
+	          </p>
+	          <!-- <p align="justify" style="color:red;"> -->
+	          <!--   <b><span color="red"> --> 
+		  <!-- I am looking for full-time research positions starting from Summer/Fall 2022. -->
+		  <!-- </span></b> -->
+	          <!-- </p> -->
+	          <p align="justify"> 
+	      	    I have been fortunate to work with some amazing mentors and pioneers in the field of AI and Robotics.
+	            <ul>
+	              <li> <i>2021-25:</i> <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a> at NVIDIA
+	              <li> <i>2018-22:</i> <a href="http://www.cs.princeton.edu/~jiadeng/"> Jia Deng </a> at Princeton University
+                <li> <i>2021:</i> <a href="http://vladlen.info/"> Vladlen Koltun </a> at Intel
+	              <li> <i>2016:</i> <a href="https://www.prateekjain.org/">Prateek Jain</a> at MSR India
+	              <li> <i>2015:</i> <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a> at USC
+	            </ul>
+                  </p>
+                </div>
+                <div class="image-content">
+                  <img src="images/self_rectangular.png" class="profile-image" style="width: 100%; max-width: 260px;">
+                </div>
+              </div>
+	    </td>
           </tr>
 	  <tr>
             <td colspan="2">
