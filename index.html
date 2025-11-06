@@ -242,7 +242,8 @@
     /* Contact links bar styling - Connected segments */
     .contact-links {
       padding: 20px;
-      margin-top: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -281,6 +282,12 @@
       border-radius: 8px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
       border: 1px solid rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+    
+    .profile-image:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     }
     
     /* Asymmetric intro layout */
@@ -288,6 +295,15 @@
       text-align: center;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    
+    .asymmetric-intro .name-header:hover {
+      transform: translateY(-2px);
+      background-color: rgba(23, 114, 208, 0.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
     
     .asymmetric-intro .content-row {
@@ -298,6 +314,15 @@
     
     .asymmetric-intro .bio-content {
       flex: 2;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    
+    .asymmetric-intro .bio-content:hover {
+      transform: translateY(-3px);
+      background-color: rgba(23, 114, 208, 0.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
     
     .asymmetric-intro .image-content {
@@ -378,7 +403,6 @@
                 <a href="https://www.linkedin.com/in/ankit-goyal-5baaa287/">LinkedIn</a>
                 <a href="https://x.com/imankitgoyal">Twitter</a>
              </p>
-	     <p>&nbsp;</p>
 	   </td>
 	  </tr>
         </table>
