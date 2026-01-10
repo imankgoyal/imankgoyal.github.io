@@ -44,14 +44,21 @@
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.6;
-      background: linear-gradient(to bottom, #ffffff 0%, #f8fafb 50%, #ffffff 100%);
+      background: linear-gradient(to bottom, #fdfbf7 0%, #f9f6f2 50%, #fdfbf7 100%);
       background-attachment: fixed;
+      color: #3a3a3a;
     }
     
     td,
     th,
     tr,
-    p,
+    p {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #3a3a3a;
+    }
+    
     a {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 14px;
@@ -67,7 +74,7 @@
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 24px;
       font-weight: 600;
-      color: #2c3e50;
+      color: #4a4a4a;
       display: block;
       margin-bottom: 10px;
     }
@@ -91,7 +98,7 @@
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 34px;
       font-weight: 700;
-      color: #1a1a1a;
+      color: #2a2a2a;
       letter-spacing: -0.5px;
     }
     
@@ -130,7 +137,7 @@
     .publication-row:hover {
       transform: translateY(-3px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      background-color: rgba(23, 114, 208, 0.02);
+      background-color: rgba(250, 248, 245, 0.8);
     }
     
     /* Better paragraph spacing */
@@ -154,7 +161,7 @@
     
     /* News section styling */
     .news-section {
-      background-color: rgba(247, 250, 252, 0.8);
+      background-color: rgba(250, 248, 245, 0.9);
       border-radius: 8px;
       padding: 20px;
     }
@@ -168,7 +175,7 @@
       padding: 10px 15px;
       margin-bottom: 10px;
       border-left: 3px solid #1772d0;
-      background-color: white;
+      background-color: rgba(255, 254, 251, 0.95);
       border-radius: 4px;
       transition: all 0.2s ease;
     }
@@ -204,7 +211,7 @@
     
     /* Institution timeline styling */
     .institution-timeline td:hover {
-      background-color: rgba(23, 114, 208, 0.05) !important;
+      background-color: rgba(250, 248, 245, 0.9) !important;
     }
     
     .institution-timeline img {
@@ -224,12 +231,13 @@
     .publication-row video {
       border-radius: 6px;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.05);
     }
     
     .publication-row:hover img,
     .publication-row:hover video {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
       transform: scale(1.02);
     }
     
@@ -256,7 +264,7 @@
       border-right: none;
       transition: all 0.2s ease;
       display: inline-block;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 254, 251, 0.9);
       font-weight: 500;
       color: #1772d0;
     }
@@ -280,14 +288,14 @@
     /* Profile image styling */
     .profile-image {
       border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.06);
       transition: all 0.3s ease;
     }
     
     .profile-image:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
     
     /* Asymmetric intro layout */
@@ -302,18 +310,18 @@
     
     .asymmetric-intro .name-header:hover {
       transform: translateY(-2px);
-      background-color: rgba(23, 114, 208, 0.02);
+      background-color: rgba(250, 248, 245, 0.6);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
     
     .asymmetric-intro .content-row {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 30px;
     }
     
     .asymmetric-intro .bio-content {
-      flex: 2;
+      flex: 2.2;
       transition: all 0.3s ease;
       border-radius: 8px;
       padding: 15px;
@@ -321,21 +329,22 @@
     
     .asymmetric-intro .bio-content:hover {
       transform: translateY(-3px);
-      background-color: rgba(23, 114, 208, 0.02);
+      background-color: rgba(250, 248, 245, 0.6);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
     
     .asymmetric-intro .image-content {
       flex: 1;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      padding-top: 0;
     }
     
     /* Main content container */
     body > table {
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+      background-color: rgba(255, 254, 251, 0.95);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
       border-radius: 10px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -361,7 +370,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10" class="asymmetric-intro">
           <tr>
             <td width="100%" class="name-header">
-              <name>Ankit Goyal</name>
+                <name>Ankit Goyal</name>
             </td>
           </tr>
           <tr>
@@ -369,29 +378,23 @@
               <div class="content-row">
                 <div class="bio-content">
                   <p align="justify">
-		    I am a Senior Research Scientist in Robotics at NVIDIA. I did my Ph.D. in Computer Science at Princeton University, where I was advised by <a href = "http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>. I completed Masters from University of Michigan and Bachelors from IIT Kanpur. 
+		    I am a Senior Research Scientist at NVIDIA, working on generalist robot learning. My research establishes the <span style="color:#8b5cf6; font-weight:500;">foundations</span> for <span style="color:#d97706; font-weight:500;">generalist robot learning</span> in the era of <span style="color:#059669; font-weight:500;">foundation models</span>.
 	          </p>
-	          <!-- <p align="justify" style="color:red;"> -->
-	          <!--   <b><span color="red"> --> 
-		  <!-- I am looking for full-time research positions starting from Summer/Fall 2022. -->
-		  <!-- </span></b> -->
-	          <!-- </p> -->
-	          <p align="justify"> 
-	      	    I have been fortunate to work with some amazing mentors and pioneers in the field of AI and Robotics.
-	            <ul>
-	              <li> <i>2021-25:</i> <a href="https://homes.cs.washington.edu/~fox/"> Dieter Fox </a> at NVIDIA
-	              <li> <i>2018-22:</i> <a href="http://www.cs.princeton.edu/~jiadeng/"> Jia Deng </a> at Princeton University
-                <li> <i>2021:</i> <a href="http://vladlen.info/"> Vladlen Koltun </a> at Intel
-	              <li> <i>2016:</i> <a href="https://www.prateekjain.org/">Prateek Jain</a> at MSR India
-	              <li> <i>2015:</i> <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>, <a href="http://tanayag.com/">Tanaya Guha</a> and <a herf="https://navkr.com/"> Naveen Kumar </a> at USC
-	            </ul>
-            </p>
+              <p align="justify">
+		    I completed my Ph.D. in CS at Princeton University, advised by <a href="http://www.cs.princeton.edu/~jiadeng/">Prof. Jia Deng</a>, and have been fortunate to work with pioneers in AI including <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, <a href="http://vladlen.info/">Vladlen Koltun</a>, <a href="https://www.prateekjain.org/">Prateek Jain</a>, and <a href="https://sail.usc.edu/people/shri.php">Shrikanth Narayanan</a>. I am an <a href='https://sites.google.com/view/rsspioneers2023/participants?authuser=0'>RSS Pioneer</a> and a <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2021-north-america">Qualcomm Innovation Fellow</a>.
+	          </p>
+	      <p align="justify"> 
+		    A common thread in my work is finding the simplest possible solution to complex problems. My contributions span robot learning, manipulation, and 3D Vision. I introduced <a href="https://vla0.github.io/">VLA-0</a>, the simplest possible vision-language-action model, and <a href="https://hamster-robot.github.io/">HAMSTER</a>, a hierarchical VLA for complex tasks. My works, <a href="https://robotic-view-transformer.github.io/">RVT</a> and <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>, have been widely adopted as a core component for state-of-the-art 3D manipulation systems. I have also contributed to <a href="https://progprompt.github.io/">ProgPrompt</a>, now a standard in code-as-planning pipelines, and <a href="https://infinigen.org/">Infinigen</a>, a generator of infinite photorealistic 3D worlds.
+	          </p>
+	          <p align="justify">
+		    My work has been covered by <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">MIT News</a>, <a href="https://news.ycombinator.com/item?id=36376071">Hacker News</a>, <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/">The Robot Report</a>, and <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/">NVIDIA Blog</a>. My open-source code has cumulatively garnered over 1,500 stars on GitHub (<a href="https://github.com/NVlabs/vla0">VLA-0</a>, <a href="https://github.com/nvlabs/rvt">RVT</a>, <a href="https://github.com/imankgoyal/NonDeepNetworks">Non-Deep Networks</a>, and <a href="https://github.com/princeton-vl/SimpleView">SimpleView</a>) and is used by researchers worldwide.
+	          </p>
               </div>
                 <div class="image-content">
                   <img src="images/self_rectangular.png" class="profile-image" style="width: 100%; max-width: 260px;">
                 </div>
               </div>
-	    </td>
+            </td>
           </tr>
 	  <tr>
             <td colspan="2">
@@ -541,7 +544,7 @@
                   </p>
               </td>
           </tr>
-
+    
     <!-- HAMSTER -->
           <tr class="publication-row">
               <td width="35%">
@@ -567,7 +570,7 @@
                   </p>
               </td>
           </tr>
-
+    
     <!-- 3D-MVP -->
           <tr class="publication-row">
               <td width="35%">
@@ -619,7 +622,7 @@
 
 	  <!-- RVT -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='https://robotic-view-transformer.github.io/real_world/real_world_small.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -644,7 +647,7 @@
 
 	  <!-- RPDiff -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
 		    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
                     <source src="https://anthonysimeonov.github.io/rpdiff-multi-modal/img/book_bookshelf_seq1_8x_rdc_lout.mp4" type="video/mp4">
                 </video>
@@ -671,7 +674,7 @@
 
 	  <!-- Infinigen -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/infinigen.jpeg' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -691,7 +694,7 @@
 
 	  <!-- ProgPrompt -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/progprompt.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -757,7 +760,7 @@
 
 	  <!-- Non-deep Networks -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/nondeep.jpg' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -780,7 +783,7 @@
 	
 	  <!-- SimpleView -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/simpleview.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -803,7 +806,7 @@
           
           <!-- Rel3D -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/rel3D.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -826,7 +829,7 @@
 
           <!-- PackIt -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/packit.gif' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -848,7 +851,7 @@
 
           <!-- Think Visually -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/dsmn2.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -869,7 +872,7 @@
 
           <!-- ProtoNN -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/protonn.png' width=100%>
             </td>
             <td valign="top" width="70%">
@@ -898,7 +901,7 @@
 
           <!-- Emotion Prediction -->
           <tr class="publication-row">
-              <td width="35%">
+            <td width="35%">
               <img src='images/multimodal.png' width=100%>
             </td>
             <td valign="top" width="70%">
