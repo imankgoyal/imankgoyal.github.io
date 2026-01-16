@@ -355,6 +355,69 @@
     heading {
       margin-top: 10px;
     }
+    
+    /* Media coverage brick styles */
+    .media-bricks {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+    
+    .media-brick-item {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 180px;
+      padding: 12px;
+      background-color: rgba(250, 248, 245, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .media-brick-item:hover {
+      background-color: rgba(250, 248, 245, 0.9);
+    }
+    
+    .media-brick-box {
+      padding: 12px 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      min-width: 130px;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .media-brick-box:hover {
+      transform: scale(1.08) translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    .media-brick-box span {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    
+    .media-brick-paper {
+      color: #1772d0;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    
+    .media-brick-desc {
+      color: #666;
+      font-size: 11px;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
   </style>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231772d0'/><text x='50' y='50' font-size='45' font-weight='bold' text-anchor='middle' dominant-baseline='middle' fill='white' font-family='Arial'>AG</text></svg>">
   <title>Ankit Goyal</title>
@@ -473,6 +536,7 @@
           <tr>
             <td width="100%" valign="top" class="news-section">
               <ul>
+                <li><i>Dec 2025:</i> Gave invited talks at <a href="https://calendars.illinois.edu/detail/6991/33536017">UIUC Computer Vision Seminar</a> and JHU.</li>
                 <li><i>Oct 2025:</i> Released <a href="https://vla0.github.io/">VLA-0</a>, a simple yet state-of-the-art approach to building Vision-Language-Action models.</li>
                 <li><i>Oct 2025:</i> Gave an invited talk at <a href="https://opendrivelab.com/iccv2025/workshop/">ICCV 2025 Workshop on Advancing Spatial Understanding for Embodied Intelligence</a>.</li>
                 <li><i>Oct 2025:</i> Gave a guest lecture at <a href="https://labs.utdallas.edu/irvl/courses/fall-2025-cs-6341-robotics/">UT Dallas CS 6341 Robotics</a> on "Perspectives on Designing Vision-Language-Action Models".</li>
@@ -994,409 +1058,152 @@
     </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-          <!-- Selected Coverage -->
-          <!-- CVPR News - 3D-MVP -->
-          <tr class="publication-row">
-            <td width="15%" align="center" valign="top">
-              <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics">
-                <img src='https://www.nvidia.com/content/nvidiaGDC/us/en_US/events/cvpr/_jcr_content/root/responsivegrid/nv_container_copy_co/nv_container/nv_image.coreimg.100.1290.png/1749620067706/cvpr-2025-logo.png' style="width:100%; max-width:120px; object-fit:contain;">
-              </a>
-            </td>
-            <td width="85%" valign="top">
-              <p>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics">
-                  <strong>CVPR News</strong>
-                </a>
-                <br>
-                <i>Work covered:</i> <a href="https://jasonqsy.github.io/3DMVP/">3D-MVP</a>
-                <br>
-                Featured in CVPR 2025 AI-Enhanced Robotics highlights.
-              </p>
-            </td>
-          </tr>
-
-          <!-- NVIDIA Blog - HAMSTER -->
-          <tr class="publication-row">
-            <td width="15%" align="center" valign="top">
-              <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/">
-                <img src='https://s3.amazonaws.com/cms.ipressroom.com/219/files/20237/64e3dc1a3d6332319b2dfd35_NVIDIA-logo-white-16x9/NVIDIA-logo-white-16x9_927581a6-fc31-4fa5-85c6-379680c6aa6c-prv.png' style="width:100%; max-width:120px; object-fit:cover;">
-              </a>
-            </td>
-            <td width="85%" valign="top">
-              <p>
-                <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/">
-                  <strong>NVIDIA Blog</strong>
-                </a>
-                <br>
-                <i>Work covered:</i> <a href="https://hamster-robot.github.io/">HAMSTER</a>
-                <br>
-                NVIDIA highlights HAMSTER research at ICLR 2025.
-              </p>
-            </td>
-          </tr>
-
-          <!-- MIT News - cuTAMP -->
-          <tr class="publication-row">
-            <td width="15%" align="center" valign="top">
-              <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/MIT_News_logo.png/500px-MIT_News_logo.png' style="width:100%; max-width:120px; object-fit:contain;">
-              </a>
-            </td>
-            <td width="85%" valign="top">
-              <p>
-                <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605">
-                  <strong>MIT News</strong>
-                </a>
-                <br>
-                <i>Work covered:</i> <a href="https://cutamp.github.io/">cuTAMP</a>
-                <br>
-                New system enables robots to solve manipulation problems in seconds.
-              </p>
-            </td>
-          </tr>
-
-          <!-- The Robot Report - RVT -->
-          <tr class="publication-row">
-            <td width="15%" align="center" valign="top">
-              <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/">
-                <img src='https://www.therobotreport.com/wp-content/uploads/2018/01/the-robot-report-business-of-robots-Lisa-Eitel-Dan-Kara-Steve-Crowe.jpg' style="width:100%; max-width:120px; object-fit:cover;">
-              </a>
-            </td>
-            <td width="85%" valign="top">
-              <p>
-                <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/">
-                  <strong>The Robot Report</strong>
-                </a>
-                <br>
-                <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
-                <br>
-                NVIDIA's RVT Can Learn New Tasks After Just 10 Demos.
-              </p>
-            </td>
-          </tr>
-
-          <!-- Hacker News - Infinigen -->
-          <tr class="publication-row">
-            <td width="15%" align="center" valign="top">
-              <a href="https://news.ycombinator.com/item?id=36376071">
-                <img src='https://news.ycombinator.com/y18.svg' style="width:100%; max-width:120px;">
-              </a>
-            </td>
-            <td width="85%" valign="top">
-              <p>
-                <a href="https://news.ycombinator.com/item?id=36376071">
-                  <strong>Hacker News</strong>
-                </a>
-                <br>
-                <i>Work covered:</i> <a href="https://infinigen.org/">Infinigen</a>
-                <br>
-                Featured on Hacker News front page.
-              </p>
-            </td>
-          </tr>
+<div class="media-bricks">
+          <!-- Featured Coverage - Row 1 -->
+          <a href="https://cvpr.thecvf.com/Conferences/2025/News/AI_Enhanced_Robotics" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #1a5fb4;">
+              <span>CVPR News</span>
+            </div>
+            <div class="media-brick-paper">3D-MVP</div>
+            <div class="media-brick-desc">Featured in CVPR 2025 highlights.</div>
+          </a>
+          <a href="https://blogs.nvidia.com/blog/ai-research-iclr-2025/" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #76B900;">
+              <span>NVIDIA Blog</span>
+            </div>
+            <div class="media-brick-paper">HAMSTER</div>
+            <div class="media-brick-desc">HAMSTER research at ICLR 2025.</div>
+          </a>
+          <a href="https://news.mit.edu/2025/new-system-enables-robots-to-solve-manipulation-problems-seconds-0605" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #A31F34;">
+              <span>MIT News</span>
+            </div>
+            <div class="media-brick-paper">cuTAMP</div>
+            <div class="media-brick-desc">Solve manipulation in seconds.</div>
+          </a>
+          <a href="https://www.therobotreport.com/nvidias-rvt-can-learn-new-tasks-after-just-10-demos/" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #0891b2;">
+              <span>Robot Report</span>
+            </div>
+            <div class="media-brick-paper">RVT</div>
+            <div class="media-brick-desc">Learn tasks after just 10 demos.</div>
+          </a>
+          <!-- Row 2 -->
+          <a href="https://news.ycombinator.com/item?id=36376071" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #ff6600;">
+              <span>Hacker News</span>
+            </div>
+            <div class="media-brick-paper">Infinigen</div>
+            <div class="media-brick-desc">Featured on front page.</div>
+          </a>
+          <a href="https://towardsdatascience.com/non-deep-networks-b0b80c65c7c6/" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #047857;">
+              <span>Towards Data Science</span>
+            </div>
+            <div class="media-brick-paper">Non-Deep Networks</div>
+            <div class="media-brick-desc">"Less is the new more?"</div>
+          </a>
+          <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #2e7d32;">
+              <span>Hackster.io</span>
+            </div>
+            <div class="media-brick-paper">RVT-2</div>
+            <div class="media-brick-desc">RVT-2 is a fast learner.</div>
+          </a>
+          <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #000000;">
+              <span>Medium</span>
+            </div>
+            <div class="media-brick-paper">RVT-2</div>
+            <div class="media-brick-desc">6X training efficiency boost.</div>
+          </a>
+        </div>
 
           <!-- Collapsible Other Coverage -->
-          <tr>
-            <td colspan="2">
+        <div style="padding: 0 20px; margin-top: 15px;">
               <details class="details-example">
                 <summary>Other coverage</summary>
-                <table width="100%" border="0" cellspacing="0" cellpadding="10">
-                  <!-- VLA-0 - CSDN -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://blog.csdn.net/nenchoumi3119/article/details/153961176">
-                        <div style="width:120px; height:120px; display:flex; align-items:center; justify-content:center; background-color:#FC5531; border-radius:8px;">
-                          <span style="color:white; font-size:28px; font-weight:bold;">CSDN</span>
+            <div class="media-bricks" style="margin-top: 15px;">
+              <a href="https://blog.csdn.net/nenchoumi3119/article/details/153961176" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #FC5531;">
+                  <span>CSDN</span>
                         </div>
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://blog.csdn.net/nenchoumi3119/article/details/153961176">
-                          <strong>CSDN Blog</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://vla0.github.io/">VLA-0</a>
-                        <br>
-                        VLA Paper Review: Building State-of-the-Art VLAs with Zero Modification.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - Hackster.io -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf">
-                        <img src='https://www.hackster.io/assets/hackster_logo_squared.png' style="width:100%; max-width:120px;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://www.hackster.io/news/rvt-2-is-a-fast-learner-0469d3578acf">
-                          <strong>Hackster.io</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        RVT-2 is a Fast Learner - Coverage of our robotic manipulation research.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - Medium -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*5NKHQDjC1cUC441HTejxuQ.png" style="width:100%; max-width:120px; object-fit:cover;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://medium.com/ai-disruption/nvidia-releases-general-robot-model-rvt-2-with-6x-training-efficiency-boost-55b61a1e558b">
-                          <strong>Medium - AI Disruption</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        NVIDIA Releases General Robot Model RVT-2 with 6X Training Efficiency Boost.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - Moomoo -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1751133579898100">
-                        <img src='https://cdn.futustatic.com/moomoo_node/assets/images/moo.19ace43571.png' style="width:100%; max-width:120px; object-fit:cover;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1751133579898100">
-                          <strong>Moomoo News</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        NVIDIA Releases the General Robot Model RVT-2, Accelerating the Robotics Revolution.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - PNP Robotics -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://www.pnprobotics.com/nd.jsp?id=186">
-                        <div style="width:120px; height:120px; display:flex; align-items:center; justify-content:center; background-color:#0066CC; border-radius:8px;">
-                          <span style="color:white; font-size:22px; font-weight:bold; text-align:center; line-height:1.2;">PNP<br>Robotics</span>
+                <div class="media-brick-paper">VLA-0</div>
+                <div class="media-brick-desc">VLA paper review.</div>
+              </a>
+              <a href="https://www.moomoo.com/news/post/47625914/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #ff9500;">
+                  <span>Moomoo</span>
+                </div>
+                <div class="media-brick-paper">RVT-2</div>
+                <div class="media-brick-desc">Accelerating robotics revolution.</div>
+              </a>
+              <a href="https://www.pnprobotics.com/nd.jsp?id=186" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #0066CC;">
+                  <span>PNP Robotics</span>
+                </div>
+                <div class="media-brick-paper">RVT-2</div>
+                <div class="media-brick-desc">6X training efficiency.</div>
+              </a>
+              <a href="https://blog.csdn.net/s_m_c/article/details/141253235" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #FC5531;">
+                  <span>CSDN</span>
+                </div>
+                <div class="media-brick-paper">RVT-2</div>
+                <div class="media-brick-desc">Technical analysis.</div>
+              </a>
+              <a href="https://blog.csdn.net/yorkhunter/article/details/142838556" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #FC5531;">
+                  <span>CSDN</span>
+                </div>
+                <div class="media-brick-paper">RVT-2</div>
+                <div class="media-brick-desc">Precise manipulation.</div>
+              </a>
+              <a href="https://news.futunn.com/en/post/51689268/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #00A870;">
+                  <span>Futu News</span>
+                </div>
+                <div class="media-brick-paper">RVT-2</div>
+                <div class="media-brick-desc">Robotics revolution.</div>
+              </a>
+              <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #2e7d32;">
+                  <span>Hackster.io</span>
+                </div>
+                <div class="media-brick-paper">RVT</div>
+                <div class="media-brick-desc">3D object manipulation.</div>
+              </a>
+              <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #7c3aed;">
+                  <span>MarkTechPost</span>
                         </div>
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://www.pnprobotics.com/nd.jsp?id=186">
-                          <strong>PNP Robotics</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        NVIDIA RVT-2 general robot model reduces dependence on large training data, 6X training efficiency boost.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - CSDN (KKdlg) -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://blog.csdn.net/s_m_c/article/details/141253235">
-                        <div style="width:120px; height:120px; display:flex; align-items:center; justify-content:center; background-color:#FC5531; border-radius:8px;">
-                          <span style="color:white; font-size:28px; font-weight:bold;">CSDN</span>
+                <div class="media-brick-paper">RVT</div>
+                <div class="media-brick-desc">AI news weekly update.</div>
+              </a>
+              <a href="https://quantumzeitgeist.com/bridging-simulation-and-reality-behavior-cloning-for-real-world-manipulation-tasks/" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #1e40af;">
+                  <span>Quantum Zeitgeist</span>
                         </div>
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://blog.csdn.net/s_m_c/article/details/141253235">
-                          <strong>CSDN Blog</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        Learning Precise Manipulation from Few Demonstrations - Technical analysis.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - CSDN (yorkhunter) -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://blog.csdn.net/yorkhunter/article/details/142838556">
-                        <div style="width:120px; height:120px; display:flex; align-items:center; justify-content:center; background-color:#FC5531; border-radius:8px;">
-                          <span style="color:white; font-size:28px; font-weight:bold;">CSDN</span>
+                <div class="media-brick-paper">RVT</div>
+                <div class="media-brick-desc">Sim-to-real transfer.</div>
+              </a>
+              <a href="https://sh-tsang.medium.com/brief-review-parnet-non-deep-networks-e2e1d0d243aa" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #000000;">
+                  <span>Medium</span>
                         </div>
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://blog.csdn.net/yorkhunter/article/details/142838556">
-                          <strong>CSDN Blog</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        RVT-2: Learning precise manipulation from few demonstrations.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT-2 - Futu News -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://news.futunn.com/en/post/51689268/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1764013605623144">
-                        <div style="width:120px; height:120px; display:flex; align-items:center; justify-content:center; background-color:#00A870; border-radius:8px;">
-                          <span style="color:white; font-size:22px; font-weight:bold; text-align:center; line-height:1.2;">Futu<br>News</span>
+                <div class="media-brick-paper">Non-Deep Networks</div>
+                <div class="media-brick-desc">ParNet brief review.</div>
+              </a>
+              <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/" class="media-brick-item">
+                <div class="media-brick-box" style="background-color: #3b82f6;">
+                  <span>Synced</span>
                         </div>
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://news.futunn.com/en/post/51689268/nvidia-releases-the-general-robot-model-rvt-2-accelerating-the?level=1&data_ticket=1764013605623144">
-                          <strong>Futu News</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-                        <br>
-                        NVIDIA Releases the General Robot Model RVT-2, Accelerating the Robotics Revolution.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT - Hackster.io -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73">
-                        <img src='https://www.hackster.io/assets/hackster_logo_squared.png' style="width:100%; max-width:120px;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://www.hackster.io/news/a-new-perspective-on-3d-object-manipulation-7d912844bc73">
-                          <strong>Hackster.io</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
-                        <br>
-                        A New Perspective on 3D Object Manipulation.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT - MarkTechPost -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition">
-                        <img src='https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/f5e63dd4-5653-4f09-83e2-321a8b1ba526/thumb_AI_PAPERS_SUMMARIES.png' style="width:100%; max-width:120px;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://marktechpost-newsletter.beehiiv.com/p/ai-news-baidu-challenges-gpt-theorem-proving-llms-motiongpt-ai-updates-june-28-2023-edition">
-                          <strong>MarkTechPost Newsletter</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
-                        <br>
-                        AI News: Featured in weekly AI updates (June 28, 2023 Edition).
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- RVT - Quantum Zeitgeist -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://quantumzeitgeist.com/bridging-simulation-and-reality-behavior-cloning-for-real-world-manipulation-tasks/">
-                        <img src='https://quantumzeitgeist.com/wp-content/uploads/cropped-cropped-QuantumZ_2-1-5.png' style="width:100%; max-width:120px; object-fit:contain;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://quantumzeitgeist.com/bridging-simulation-and-reality-behavior-cloning-for-real-world-manipulation-tasks/">
-                          <strong>Quantum Zeitgeist</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://robotic-view-transformer.github.io/">RVT</a>
-                        <br>
-                        Bridging Simulation and Reality: Behavior Cloning for Real-World Manipulation Tasks.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- Non-Deep - TDS -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://towardsdatascience.com/non-deep-networks-b0b80c65c7c6/">
-                        <img src='https://miro.medium.com/v2/resize:fit:1200/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style="width:100%; max-width:120px; object-fit:contain;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://towardsdatascience.com/non-deep-networks-b0b80c65c7c6/">
-                          <strong>Towards Data Science</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
-                        <br>
-                        In-depth paper review: "Less is the new more?" - ParNet matching performance with just 12 layers.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- Non-Deep - Medium -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://sh-tsang.medium.com/brief-review-parnet-non-deep-networks-e2e1d0d243aa">
-                        <img src='https://miro.medium.com/v2/resize:fit:1200/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style="width:100%; max-width:120px; object-fit:contain;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://sh-tsang.medium.com/brief-review-parnet-non-deep-networks-e2e1d0d243aa">
-                          <strong>Medium - Sik-Ho Tsang</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
-                        <br>
-                        Brief Review: Parallel subnetworks instead of stacking one layer after another.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- Non-Deep - Synced -->
-                  <tr class="publication-row">
-                    <td width="15%" align="center" valign="top">
-                      <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/">
-                        <img src='images/synced.png' style="width:100%; max-width:120px;">
-                      </a>
-                    </td>
-                    <td width="85%" valign="top">
-                      <p>
-                        <a href="https://syncedreview.com/2021/10/22/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-129/">
-                          <strong>Synced Review</strong>
-                        </a>
-                        <br>
-                        <i>Work covered:</i> <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
-                        <br>
-                        Featured in article about high-performance ML frameworks and architectures.
-                      </p>
-                    </td>
-                  </tr>
-                </table>
+                <div class="media-brick-paper">Non-Deep Networks</div>
+                <div class="media-brick-desc">High-performance ML.</div>
+              </a>
+            </div>
               </details>
-            </td>
-          </tr>
-
-        </table>
+        </div>
 
         <!-- Open-Source Code -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -1407,127 +1214,50 @@
     </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-          <!-- VLA-0 Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/NVlabs/vla0">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/NVlabs/vla0">
-                  <papertitle>VLA-0: Building State-of-the-Art VLAs with Zero Modification</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/NVlabs/vla0"><img src="https://img.shields.io/github/stars/NVlabs/vla0?style=social" alt="Stars"></a>
-                <a href="https://github.com/NVlabs/vla0"><img src="https://img.shields.io/github/forks/NVlabs/vla0?style=social" alt="Forks"></a>
-                | Related: <a href="https://vla0.github.io/">VLA-0</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- RVT Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/NVlabs/RVT">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/NVlabs/RVT">
-                  <papertitle>Robotic View Transformer (RVT & RVT-2)</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/NVlabs/RVT"><img src="https://img.shields.io/github/stars/NVlabs/RVT?style=social" alt="Stars"></a>
-                <a href="https://github.com/NVlabs/RVT"><img src="https://img.shields.io/github/forks/NVlabs/RVT?style=social" alt="Forks"></a>
-                | Related: <a href="https://robotic-view-transformer.github.io/">RVT</a>, <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Non-Deep Networks Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/imankgoyal/NonDeepNetworks">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/imankgoyal/NonDeepNetworks">
-                  <papertitle>Non-Deep Networks</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/imankgoyal/NonDeepNetworks"><img src="https://img.shields.io/github/stars/imankgoyal/NonDeepNetworks?style=social" alt="Stars"></a>
-                <a href="https://github.com/imankgoyal/NonDeepNetworks"><img src="https://img.shields.io/github/forks/imankgoyal/NonDeepNetworks?style=social" alt="Forks"></a>
-                | Related: <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- SimpleView Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/princeton-vl/SimpleView">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/princeton-vl/SimpleView">
-                  <papertitle>SimpleView: Point Cloud Classification</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/princeton-vl/SimpleView"><img src="https://img.shields.io/github/stars/princeton-vl/SimpleView?style=social" alt="Stars"></a>
-                <a href="https://github.com/princeton-vl/SimpleView"><img src="https://img.shields.io/github/forks/princeton-vl/SimpleView?style=social" alt="Forks"></a>
-                | Related: <a href="https://arxiv.org/abs/2106.05304">SimpleView</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- PackIt Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/princeton-vl/PackIt">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/princeton-vl/PackIt">
-                  <papertitle>PackIt: A Virtual Environment for Geometric Planning</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/princeton-vl/PackIt"><img src="https://img.shields.io/github/stars/princeton-vl/PackIt?style=social" alt="Stars"></a>
-                <a href="https://github.com/princeton-vl/PackIt"><img src="https://img.shields.io/github/forks/princeton-vl/PackIt?style=social" alt="Forks"></a>
-                | Related: <a href="https://arxiv.org/abs/2007.11121">PackIt</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Rel3D Code -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://github.com/princeton-vl/Rel3D">
-                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' style="width:50px; height:50px;">
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://github.com/princeton-vl/Rel3D">
-                  <papertitle>Rel3D: Grounding Spatial Relations in 3D</papertitle>
-                </a>
-                <br>
-                <a href="https://github.com/princeton-vl/Rel3D"><img src="https://img.shields.io/github/stars/princeton-vl/Rel3D?style=social" alt="Stars"></a>
-                <a href="https://github.com/princeton-vl/Rel3D"><img src="https://img.shields.io/github/forks/princeton-vl/Rel3D?style=social" alt="Forks"></a>
-                | Related: <a href="https://papers.nips.cc/paper/2020/hash/76dc611d6ebaafc66cc0879c71b5db5c-Abstract.html">Rel3D</a>
-              </p>
-            </td>
-          </tr>
-        </table>
+        <div class="media-bricks">
+          <a href="https://github.com/NVlabs/vla0" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>VLA-0</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/NVlabs/vla0?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/NVlabs/vla0?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Vision-Language-Action models.</div>
+          </a>
+          <a href="https://github.com/NVlabs/RVT" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>RVT & RVT-2</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/NVlabs/RVT?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/NVlabs/RVT?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Robotic View Transformer.</div>
+          </a>
+          <a href="https://github.com/imankgoyal/NonDeepNetworks" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>Non-Deep Networks</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/imankgoyal/NonDeepNetworks?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/imankgoyal/NonDeepNetworks?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Parallel neural networks.</div>
+          </a>
+          <a href="https://github.com/princeton-vl/SimpleView" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>SimpleView</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/princeton-vl/SimpleView?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/princeton-vl/SimpleView?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Point cloud classification.</div>
+          </a>
+          <a href="https://github.com/princeton-vl/PackIt" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>PackIt</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/princeton-vl/PackIt?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/princeton-vl/PackIt?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Geometric planning environment.</div>
+          </a>
+          <a href="https://github.com/princeton-vl/Rel3D" class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #24292e;">
+              <span>Rel3D</span>
+            </div>
+            <div class="media-brick-paper"><img src="https://img.shields.io/github/stars/princeton-vl/Rel3D?style=flat-square&color=1772d0" alt="Stars"> <img src="https://img.shields.io/github/forks/princeton-vl/Rel3D?style=flat-square&color=888" alt="Forks"></div>
+            <div class="media-brick-desc">Spatial relations in 3D.</div>
+          </a>
+        </div>
 
         <!-- Patents -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -1538,126 +1268,97 @@
     </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-          <!-- Patent 1 - Parallel Architectures -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://patents.google.com/patent/US12260630B2/en">
-                <div style="width:60px; height:70px; display:flex; flex-direction:column; align-items:center; justify-content:center; background: linear-gradient(135deg, #76B900, #5a8f00); border-radius:4px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
-                  <span style="color:white; font-size:9px; font-weight:600; display:block;">GRANTED</span>
-                  <span style="color:rgba(255,255,255,0.9); font-size:8px; display:block; margin-top:2px;">2025</span>
+        <div class="media-bricks">
+          <a href="https://patents.google.com/patent/US12260630B2/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #76B900, #5a8f00);">
+              <span>GRANTED</span>
                 </div>
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://patents.google.com/patent/US12260630B2/en">
-                  <papertitle>Methods and apparatus to implement parallel architectures for neural network classifiers</papertitle>
-                </a>
-                <br>
-                <strong>Ankit Goyal</strong>, Alexey Bochkovskiy, Vladlen Koltun | US12260630B2 | Related: <a href="https://arxiv.org/abs/2110.07641">Non-Deep Networks</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Patent 2 - View Transformation -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://patents.google.com/patent/US20240273810A1/en">
-                <div style="width:60px; height:70px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #95a5a6, #7f8c8d); border-radius:4px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
-                  <span style="color:white; font-size:9px; font-weight:600;">PENDING</span>
+            <div class="media-brick-paper">Non-Deep Networks</div>
+            <div class="media-brick-desc">Parallel architectures for NN.</div>
+          </a>
+          <a href="https://patents.google.com/patent/US20240273810A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
                 </div>
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://patents.google.com/patent/US20240273810A1/en">
-                  <papertitle>View transformation for machine-learned three-dimensional reasoning</papertitle>
-                </a>
-                <br>
-                <strong>Ankit Goyal</strong>, Jie Xu, Yijie Guo, Valts Blukis, Yu-Wei Chao, Dieter Fox | US20240273810A1 | Related: <a href="https://robotic-view-transformer.github.io/">RVT</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Patent 3 - Multi-stage Inference -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://patents.google.com/patent/US20240371082A1/en">
-                <div style="width:60px; height:70px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #95a5a6, #7f8c8d); border-radius:4px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
-                  <span style="color:white; font-size:9px; font-weight:600;">PENDING</span>
+            <div class="media-brick-paper">RVT</div>
+            <div class="media-brick-desc">View transformation for 3D.</div>
+          </a>
+          <a href="https://patents.google.com/patent/US20240371082A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
                 </div>
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://patents.google.com/patent/US20240371082A1/en">
-                  <papertitle>Three-dimensional reasoning using multi-stage inference for autonomous systems and applications</papertitle>
-                </a>
-                <br>
-                <strong>Ankit Goyal</strong>, Valts Blukis, Jie Xu, Yijie Guo, Yu-Wei Chao, Dieter Fox | US20240371082A1 | Related: <a href="https://robotic-view-transformer-2.github.io/">RVT-2</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Patent 4 - Place Objects -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://patents.google.com/patent/US20230234233A1/en">
-                <div style="width:60px; height:70px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #95a5a6, #7f8c8d); border-radius:4px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
-                  <span style="color:white; font-size:9px; font-weight:600;">PENDING</span>
+            <div class="media-brick-paper">RVT-2</div>
+            <div class="media-brick-desc">Multi-stage 3D inference.</div>
+          </a>
+          <a href="https://patents.google.com/patent/US20230234233A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
                 </div>
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://patents.google.com/patent/US20230234233A1/en">
-                  <papertitle>Techniques to place objects using neural networks</papertitle>
-                </a>
-                <br>
-                <strong>Ankit Goyal</strong>, Arsalan Mousavian, Chris Paxton, Yu-Wei Chao, Brian Okorn, Jia Deng, Dieter Fox | US20230234233A1 | Related: <a href="https://imankgoyal.github.io/ifor.html">IFOR</a>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Patent 5 - Prompt Generator -->
-          <tr class="publication-row">
-            <td width="8%" align="center" valign="middle">
-              <a href="https://patents.google.com/patent/US20240095077A1/en">
-                <div style="width:60px; height:70px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #95a5a6, #7f8c8d); border-radius:4px; box-shadow: 0 2px 6px rgba(0,0,0,0.12);">
-                  <span style="color:white; font-size:9px; font-weight:600;">PENDING</span>
+            <div class="media-brick-paper">IFOR</div>
+            <div class="media-brick-desc">Object placement with NN.</div>
+          </a>
+<a href="https://patents.google.com/patent/US20240095077A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
                 </div>
-              </a>
-            </td>
-            <td width="92%" valign="top">
-              <p style="margin-bottom:5px;">
-                <a href="https://patents.google.com/patent/US20240095077A1/en">
-                  <papertitle>Prompt generator for use with one or more machine learning processes</papertitle>
-                </a>
-                <br>
-                Ishika Singh, Valts Blukis, Arsalan Mousavian, <strong>Ankit Goyal</strong>, Danfei Xu, Jonathan Tremblay, Dieter Fox, Jesse Thomason, Animesh Garg | US20240095077A1 | Related: <a href="https://progprompt.github.io/">ProgPrompt</a>
-              </p>
-            </td>
-          </tr>
-        </table>
+            <div class="media-brick-paper">ProgPrompt</div>
+            <div class="media-brick-desc">Prompt generator for ML.</div>
+          </a>
+          <a href="https://patents.google.com/patent/US20250381667A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
+                </div>
+            <div class="media-brick-paper">3D-MVP</div>
+            <div class="media-brick-desc">Multi-view pretraining for robots.</div>
+          </a>
+          <a href="https://patents.google.com/patent/US20250156764A1/en" class="media-brick-item">
+            <div class="media-brick-box" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+              <span>PENDING</span>
+                </div>
+            <div class="media-brick-paper">Ada-demo</div>
+            <div class="media-brick-desc">Adaptive demonstrations.</div>
+          </a>
+        </div>
 
         <!-- Teaching -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tr>
               <td width="100%" valign="middle">
                 <heading>Teaching</heading>
-                <p>
-                  I have been a Teaching Assistant for the following courses:
-                    <ul>
-                      <li> COS529: Advanced Computer Vision at Princeton University [Winter 2020] </li>
-                      <li> COS429: Computer Vision at Princeton University [Fall 2018] </li>
-                      <li> EECS442: Computer Vision at University of Michigan  [Fall 2017, Winter 2018]</li>
-                    </ul>
-                </p>
-<!-- 		Some <a href="https://imankgoyal.github.io/related.html">related papers</a> to mine. -->
               </td>
             </tr>
         </table>
+
+        <div class="media-bricks">
+          <div class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #e07020;">
+              <span>Princeton</span>
+            </div>
+            <div class="media-brick-paper">COS529</div>
+            <div class="media-brick-desc">Advanced CV [Winter 2020]</div>
+          </div>
+          <div class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #e07020;">
+              <span>Princeton</span>
+            </div>
+            <div class="media-brick-paper">COS429</div>
+            <div class="media-brick-desc">Computer Vision [Fall 2018]</div>
+          </div>
+          <div class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #00274C;">
+              <span>U-Michigan</span>
+            </div>
+            <div class="media-brick-paper">EECS442</div>
+            <div class="media-brick-desc">Computer Vision [Fall 2017]</div>
+          </div>
+          <div class="media-brick-item">
+            <div class="media-brick-box" style="background-color: #00274C;">
+              <span>U-Michigan</span>
+            </div>
+            <div class="media-brick-paper">EECS442</div>
+            <div class="media-brick-desc">Computer Vision [Winter 2018]</div>
+          </div>
+        </div>
 
         <!-- Reference -->
         <p align="right"><a href="https://jonbarron.info/">[Web Cite]</a></p>
